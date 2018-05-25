@@ -193,13 +193,13 @@ def broad_continuous_time_edge_markovian(n, alpha):
     '''
     
     def iter_data():
-        a = P(alpha, 1., np.random.rand(n,n))
+        a = P(alpha, 1., 1000., np.random.rand(n,n))
 
         while True:
             a -= 1.
             c = np.where(a <= 0.)
             yield np.array([(i,j) for i,j in zip(c[0], c[1]) if i < j])
-            a[c] = P(alpha, 1., np.random.rand(*c[0].shape))
+            a[c] = P(alpha, 1., 1000, np.random.rand(*c[0].shape))
             
     # Set bunch attributes
     result = Bunch(iter_data=iter_data)
