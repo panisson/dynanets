@@ -48,8 +48,6 @@ Copyright (C) 2018 Istituto per l'Interscambio Scientifico I.S.I.
 You can contact us by email (isi@isi.it) or write to:  
 ISI Foundation, Via Chisola 5, 10126 Torino, Italy.  
 
-The Model B was implemented with the contribution of Juliette Stehle.
-
 References
 ----------
 
